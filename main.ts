@@ -1,6 +1,10 @@
 function doMotor () {
     if (true) {
-    	
+        mbit_Robot.CarCtrl(mbit_Robot.CarState.Car_Run)
+    } else if (false) {
+        mbit_Robot.CarCtrl(mbit_Robot.CarState.Car_Left)
+    } else {
+        mbit_Robot.CarCtrl(mbit_Robot.CarState.Car_Stop)
     }
 }
 bluetooth.onBluetoothConnected(function () {
